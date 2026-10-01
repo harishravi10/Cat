@@ -1,0 +1,220 @@
+/* Simple Black and White Wireframe Style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.5;
+  padding: 24px 16px;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Wireframe Boxes / Cards */
+.box {
+  border: 1px solid #000000;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.box-gray {
+  border: 1px solid #cccccc;
+  background: #fafafa;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+/* Forms & Inputs */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border-radius: 0;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 2px solid #000000;
+}
+
+textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* Buttons */
+button, .btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border: 1px solid #000000;
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background: #333333;
+}
+
+button:active, .btn:active {
+  background: #555555;
+}
+
+button.btn-outline {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+button.btn-outline:hover {
+  background: #f0f0f0;
+}
+
+button.btn-small {
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+/* Messages */
+.error-msg {
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+  background: #fff5f5;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+.success-msg {
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+  background: #f1f8e9;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}
+
+/* Paper Item */
+.paper-item {
+  border: 1px solid #000000;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+.paper-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.paper-meta {
+  font-size: 0.8rem;
+  color: #555555;
+  margin-bottom: 12px;
+}
+
+.paper-content {
+  background: #f8f8f8;
+  border: 1px solid #dddddd;
+  padding: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.paper-content.expanded {
+  max-height: none;
+}
+
+.paper-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Utilities */
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.text-muted {
+  color: #666666;
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #cccccc;
+  font-size: 0.8rem;
+  color: #666666;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
